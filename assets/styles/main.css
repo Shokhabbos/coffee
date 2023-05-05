@@ -182,6 +182,10 @@ p {
     text-align: center;
     color: #fefcf7;
   }
+  .header .hero .hero__content .btn {
+    display: block;
+    margin: 0 auto;
+  }
   .cards {
     display: flex;
     flex-wrap: wrap;
