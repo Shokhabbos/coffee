@@ -1,0 +1,59 @@
+@media only screen and (max-width: 576px) {
+  // for mobile styles
+  .header {
+    &__right nav {
+      display: none;
+    }
+    .hamburger__icon {
+      display: block;
+    }
+    .hero {
+      width: 100%;
+      max-width: 327px;
+      height: 500px;
+      margin: 0 auto;
+      background-size: cover;
+      .hero__content {
+        padding: 100px 24px;
+        width: auto;
+        h1 {
+          font-family: "Fraunces 9pt";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 40px;
+          line-height: 40px;
+          text-align: center;
+          color: #fefcf7;
+        }
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          text-align: center;
+          color: #fefcf7;
+        }
+        .btn{
+            display: block;
+            margin: 0 auto;
+        }
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .holder {
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 768px) {
+  // for tablet styles
+}
+@media only screen and (min-width: 992px) {
+  // for noutbook small size styles
+}
+@media only screen and (min-width: 1200px) {
+  // for big sizes devices styles
+}
