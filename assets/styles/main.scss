@@ -3,4 +3,9 @@
 @import "./mixin";
 @import "./header";
 @import "./sections";
+@import "./subs";
 @import "./media";
+
+h1{
+    font-family: "Fraunces", serif;
+}
