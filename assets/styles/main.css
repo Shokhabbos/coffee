@@ -325,6 +325,65 @@ p {
   right: 0;
 }
 
+.msg__content {
+  padding: 64px 24px;
+  background-color: #333d4b;
+  border-radius: 10px;
+  margin: 45px 0;
+}
+.msg__content span {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+.msg__content p {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.msg__btn {
+  display: flex;
+  justify-content: end;
+}
+.msg__btn .btn {
+  background: #66d2cf;
+  border-radius: 6px;
+  padding: 15px 31px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fefcf7;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  margin-bottom: 50px;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333D4B;
+  padding: 47px 85px;
+  border-radius: 12px;
+}
+.footer__right a {
+  margin: 0 10px;
+}
+
 @media only screen and (max-width: 576px) {
   .header__right nav {
     display: none;
