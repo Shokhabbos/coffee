@@ -33,9 +33,9 @@
           text-align: center;
           color: #fefcf7;
         }
-        .btn{
-            display: block;
-            margin: 0 auto;
+        .btn {
+          display: block;
+          margin: 0 auto;
         }
       }
     }
@@ -48,11 +48,70 @@
     background-size: contain;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   // for tablet styles
+  // .subs__hero-content {
+  //   .texts {
+  //     h1 {
+  //       font-style: normal;
+  //       font-weight: 900;
+  //       font-size: 48px;
+  //       line-height: 48px;
+  //       color: #fefcf7;
+  //     }
+  //   }
+  // }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   // for noutbook small size styles
+  .subs__hero-content {
+    .texts {
+      h1 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 48px;
+        color: #fefcf7;
+      }
+    }
+  }
+  .order__line img {
+    width: 76%;
+    min-width: 300px;
+  }
+  .order__box-holder {
+    gap: 58px;
+    h2 {
+      margin-bottom: 26px;
+    }
+    h1 {
+      margin-bottom: 24px;
+    }
+  }
+
+  .order__wrapper {
+    padding: 40px;
+  }
+
+  .quiz__left{
+    display: none;
+  }
+  .quiz__right{
+    width: 100%;
+  }
+  .msg__btn{
+    justify-content: center;
+  }
+  .footer__wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__list{
+    margin-bottom: 50px;
+    gap: 58px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   // for big sizes devices styles

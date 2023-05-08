@@ -431,6 +431,49 @@ p {
     background-size: contain;
   }
 }
+@media only screen and (max-width: 992px) {
+  .subs__hero-content .texts h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    color: #fefcf7;
+  }
+  .order__line img {
+    width: 76%;
+    min-width: 300px;
+  }
+  .order__box-holder {
+    gap: 58px;
+  }
+  .order__box-holder h2 {
+    margin-bottom: 26px;
+  }
+  .order__box-holder h1 {
+    margin-bottom: 24px;
+  }
+  .order__wrapper {
+    padding: 40px;
+  }
+  .quiz__left {
+    display: none;
+  }
+  .quiz__right {
+    width: 100%;
+  }
+  .msg__btn {
+    justify-content: center;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__list {
+    margin-bottom: 50px;
+    gap: 58px;
+  }
+}
 h1 {
   font-family: "Fraunces", serif;
 }/*# sourceMappingURL=main.css.map */
