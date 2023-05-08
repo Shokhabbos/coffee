@@ -1,4 +1,5 @@
 @media only screen and (max-width: 576px) {
+
   // for mobile styles
   .header {
     &__right nav {
@@ -47,20 +48,81 @@
   .holder {
     background-size: contain;
   }
+
+  .footer{
+    &__wrapper, &__list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer__list{
+      margin-bottom: 24px;
+      gap: 0;
+      padding: 0;
+    }
+    .footer__list li{
+      margin-bottom: 24px;
+    }
+  }
 }
 @media only screen and (max-width: 768px) {
   // for tablet styles
-  // .subs__hero-content {
-  //   .texts {
-  //     h1 {
-  //       font-style: normal;
-  //       font-weight: 900;
-  //       font-size: 48px;
-  //       line-height: 48px;
-  //       color: #fefcf7;
-  //     }
-  //   }
-  // }
+  .hamburger__icon {
+    display: none;
+  }
+  .subs__hero-content {
+    @include d-flex(center, center);
+    // background:  rgba(0, 0, 0, 0.513886);;
+    background-position: center;
+    .texts {
+      width: 100%;
+      h1 {
+        font-family: "Fraunces 9pt";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fefcf7;
+      }
+      p {
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #fefcf7;
+        opacity: 0.8;
+      }
+    }
+  }
+  .order__line {
+    img{
+      display: none;
+    }
+  }
+  .order__box-holder, .order__box, .quiz__right-content-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    p{
+      text-align: center;
+    }
+  }
+  .quiz__right-content{
+    background: #f4f1eb;
+    border-radius: 8px;
+    padding: 28px;
+    width: 89%;
+    height: 140px;
+    p{
+      text-align: left;
+    }
+  }
 }
 @media only screen and (max-width: 992px) {
   // for noutbook small size styles
@@ -75,10 +137,7 @@
       }
     }
   }
-  .order__line img {
-    width: 76%;
-    min-width: 300px;
-  }
+
   .order__box-holder {
     gap: 58px;
     h2 {
@@ -93,22 +152,22 @@
     padding: 40px;
   }
 
-  .quiz__left{
+  .quiz__left {
     display: none;
   }
-  .quiz__right{
+  .quiz__right {
     width: 100%;
   }
-  .msg__btn{
+  .msg__btn {
     justify-content: center;
   }
-  .footer__wrapper{
+  .footer__wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .footer__list{
+  .footer__list {
     margin-bottom: 50px;
     gap: 58px;
   }

@@ -68,6 +68,12 @@
       color: #fefcf7;
     }
   }
+  &__line {
+    img {
+      width: 76%;
+      min-width: 300px;
+    }
+  }
 }
 
 // quiz
@@ -198,27 +204,25 @@
   }
 }
 
-.msg__btn{
+.msg__btn {
   display: flex;
   justify-content: end;
-  .btn{
+  .btn {
     @include btn;
-    
   }
-
 }
 
-.footer{
+.footer {
   margin-bottom: 50px;
-  &__wrapper{
+  &__wrapper {
     @include d-flex;
-    background-color: #333D4B;
+    background-color: #333d4b;
     padding: 47px 85px;
     border-radius: 12px;
   }
 
   &__right {
-    a{
+    a {
       margin: 0 10px;
     }
   }

@@ -222,6 +222,10 @@ p {
   line-height: 26px;
   color: #fefcf7;
 }
+.order__line img {
+  width: 76%;
+  min-width: 300px;
+}
 
 .quiz {
   margin-bottom: 100px;
@@ -376,7 +380,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333D4B;
+  background-color: #333d4b;
   padding: 47px 85px;
   border-radius: 12px;
 }
@@ -430,6 +434,75 @@ p {
   .holder {
     background-size: contain;
   }
+  .footer__wrapper, .footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footer__list {
+    margin-bottom: 24px;
+    gap: 0;
+    padding: 0;
+  }
+  .footer .footer__list li {
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hamburger__icon {
+    display: none;
+  }
+  .subs__hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+  .subs__hero-content .texts {
+    width: 100%;
+  }
+  .subs__hero-content .texts h1 {
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fefcf7;
+  }
+  .subs__hero-content .texts p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #fefcf7;
+    opacity: 0.8;
+  }
+  .order__line img {
+    display: none;
+  }
+  .order__box-holder, .order__box, .quiz__right-content-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .order__box-holder p, .order__box p, .quiz__right-content-holder p {
+    text-align: center;
+  }
+  .quiz__right-content {
+    background: #f4f1eb;
+    border-radius: 8px;
+    padding: 28px;
+    width: 89%;
+    height: 140px;
+  }
+  .quiz__right-content p {
+    text-align: left;
+  }
 }
 @media only screen and (max-width: 992px) {
   .subs__hero-content .texts h1 {
@@ -438,10 +511,6 @@ p {
     font-size: 48px;
     line-height: 48px;
     color: #fefcf7;
-  }
-  .order__line img {
-    width: 76%;
-    min-width: 300px;
   }
   .order__box-holder {
     gap: 58px;
@@ -473,7 +542,4 @@ p {
     margin-bottom: 50px;
     gap: 58px;
   }
-}
-h1 {
-  font-family: "Fraunces", serif;
 }/*# sourceMappingURL=main.css.map */
